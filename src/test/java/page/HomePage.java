@@ -20,7 +20,7 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//ul[@class='menu__primary']/li[2]/a")
     private WebElement womenLocator;
 
-    @FindBy(xpath = "//li[@class='menu__session__item']//a[2]")
+    @FindBy(xpath = "/html/body/header/nav/ul[1]/li[1]/div/a[1]")
     private WebElement signInLocator;
 
     @FindBy(xpath = "//input[@id='modal-txt-signin-email']")
@@ -35,7 +35,7 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//*[@id='modal-txt-signin-email-email-format-error']")
     private WebElement messageErrorSignInLocator;
 
-    @FindBy(xpath = "//div[@iclass='FadeIn-module--container__3nvOo ClubCard--container__1zjeV']")
+   @FindBy(xpath = "//a[@class='menu__myhm' and @data-signin-state='signedin']")
     private WebElement profileLocator;
 
 
