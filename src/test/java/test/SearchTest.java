@@ -12,7 +12,7 @@ public class SearchTest extends CommonConditions {
     public void searchWithNoCorrectData(){
         String invalidRequest = new HomePage(driver)
                 .openPage()
-                .closeCookie()
+    //            .closeCookie()
                 .findSearchInput("fssdfs")
                 .noCorrectRequestResult();
         Assert.assertEquals(invalidRequest, "НЕТ СООТВЕТСТВУЮЩИХ ТОВАРОВ");
@@ -21,7 +21,7 @@ public class SearchTest extends CommonConditions {
     public void searchWithCorrectData(){
         boolean isFoundProducts = new HomePage(driver)
                 .openPage()
-                .closeCookie()
+  //              .closeCookie()
                 .findSearchInput("Футболка")
                 .notFoundProduct();
         Assert.assertFalse(isFoundProducts);
