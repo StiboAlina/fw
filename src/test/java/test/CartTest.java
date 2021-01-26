@@ -6,7 +6,7 @@ import page.HomePage;
 
 public class CartTest extends CommonConditions {
 
-//    @Test
+    @Test
     public void addToCart(){
         boolean isEnableCheckout = new HomePage(driver)
                 .openPage()
