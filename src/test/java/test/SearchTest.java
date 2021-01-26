@@ -24,7 +24,7 @@ public class SearchTest extends CommonConditions {
   //              .closeCookie()
                 .findSearchInput("Футболка")
                 .notFoundProduct();
-        Assert.assertFalse(isFoundProducts);
+        Assert.assertTrue(isFoundProducts);
     }
 
 }
