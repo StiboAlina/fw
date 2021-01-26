@@ -54,9 +54,9 @@ public class HomePage extends AbstractPage {
     }
 
     public SearchPage findSearchInput(String inputRequest){
-        searchButtonLocator.click();
-        searchButtonLocator.sendKeys(inputRequest);
-        searchButtonLocator.sendKeys(Keys.ENTER);
+        searchInputLocator.click();
+        searchInputLocator.sendKeys(inputRequest);
+        searchInputLocator.sendKeys(Keys.ENTER);
         return new SearchPage(driver);
     }
 
