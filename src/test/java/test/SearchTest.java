@@ -8,7 +8,7 @@ import page.HomePage;
 
 public class SearchTest extends CommonConditions {
 
-   // @Test
+    @Test
     public void searchWithNoCorrectData(){
         String invalidRequest = new HomePage(driver)
                 .openPage()
