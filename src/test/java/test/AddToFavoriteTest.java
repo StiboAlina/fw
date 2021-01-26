@@ -6,7 +6,7 @@ import page.HomePage;
 
 public class AddToFavoriteTest extends CommonConditions{
 
-//    @Test
+    @Test
     public void addToFavorite(){
         boolean favoriteProduct = new HomePage(driver)
                 .openPage()
@@ -19,7 +19,7 @@ public class AddToFavoriteTest extends CommonConditions{
         Assert.assertTrue(favoriteProduct);
     }
 
-//    @Test
+    @Test
     public void deleteFavorite(){
         boolean findFavoriteButton = new HomePage(driver)
                 .openPage()
