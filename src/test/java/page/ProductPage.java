@@ -16,7 +16,7 @@ public class ProductPage extends AbstractPage {
     @FindBy (xpath = "//a[@class='menu__favorites']")
     private WebElement favoritePageLocator;
 
-    @FindBy (xpath = "//*[@id="picker-1"]/button")
+    @FindBy (xpath = "//*[@id='picker-1']/button")
     private WebElement selectSizeListLocator;
 
     @FindBy (xpath = "//div[@id='picker-1']//li[2]//span")
