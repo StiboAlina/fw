@@ -9,7 +9,7 @@ import service.UserCreator;
 public class SignInTest extends CommonConditions {
 
 
-    @Test
+ //   @Test
     public void signIn(){
         User testUser = UserCreator.withCredentialsFromProperty();
         boolean signInWithCorrectData = new HomePage(driver)
@@ -18,7 +18,7 @@ public class SignInTest extends CommonConditions {
                 .profileIsEnable();
         Assert.assertTrue(signInWithCorrectData);
     }
-    @Test
+//    @Test
     public void signInWithNoCorrectData(){
         User testUser = UserCreator.withoutCredentialsFromProperty();
         boolean NoCorrectData = new HomePage(driver)
