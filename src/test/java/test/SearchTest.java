@@ -8,7 +8,7 @@ import page.HomePage;
 
 public class SearchTest extends CommonConditions {
 
-    @Test
+ //   @Test
     public void searchWithNoCorrectData(){
         String invalidRequest = new HomePage(driver)
                 .openPage()
@@ -17,7 +17,7 @@ public class SearchTest extends CommonConditions {
                 .noCorrectRequestResult();
         Assert.assertEquals(invalidRequest, "НЕТ СООТВЕТСТВУЮЩИХ ТОВАРОВ");
     }
-    @Test
+ //   @Test
     public void searchWithCorrectData(){
         boolean isFoundProducts = new HomePage(driver)
                 .openPage()
